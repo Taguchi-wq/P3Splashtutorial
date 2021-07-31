@@ -81,6 +81,7 @@ class TutorialViewController: UIViewController {
     // MARK: - @IBActions
     /// スキップボタンをタップした時の処理
     @IBAction private func tappedSkipButton(_ sender: UIButton) {
+        transitionToLayoutVC()
     }
     
     /// 次へ進むボタンをタップした時の処理
