@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TutorialViewController.swift
 //  P3Splashtutorial
 //
 //  Created by cmStudent on 2021/07/31.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
 }
-
