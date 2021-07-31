@@ -26,6 +26,12 @@ class TutorialCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
+    // MARK: - initializer
+    func initialize(imageName: String) {
+        tutorialNumberImageView.image = UIImage(named: imageName)
+    }
 
 }
 

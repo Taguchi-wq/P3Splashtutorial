@@ -40,11 +40,12 @@ class TutorialViewController: UIViewController {
 extension TutorialViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return Tutorial.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let tutorialCell = collectionView.dequeueReusableCell(withReuseIdentifier: TutorialCell.reuseIdentifier, for: indexPath) as! TutorialCell
+        tutorialCell.initialize(imageName: Tutorial.allCases[indexPath.item].imageName)
         return tutorialCell
     }
     
