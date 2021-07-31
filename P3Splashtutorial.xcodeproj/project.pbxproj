@@ -14,6 +14,7 @@
 		7F3283C726B5331A0025FCC7 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3283C626B5331A0025FCC7 /* Tutorial.storyboard */; };
 		7F3283CF26B536800025FCC7 /* TutorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283CD26B536800025FCC7 /* TutorialCell.swift */; };
 		7F3283D026B536800025FCC7 /* TutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3283CE26B536800025FCC7 /* TutorialCell.xib */; };
+		7F3283D326B53CA60025FCC7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283D226B53CA60025FCC7 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7F3283C626B5331A0025FCC7 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
 		7F3283CD26B536800025FCC7 /* TutorialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCell.swift; sourceTree = "<group>"; };
 		7F3283CE26B536800025FCC7 /* TutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialCell.xib; sourceTree = "<group>"; };
+		7F3283D226B53CA60025FCC7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7F3283C826B533720025FCC7 /* Application */,
 				7F3283CA26B533980025FCC7 /* View */,
 				7F3283C926B5337E0025FCC7 /* Controller */,
+				7F3283D126B53C950025FCC7 /* Protocol */,
 				7F3283B926B52E7E0025FCC7 /* Assets.xcassets */,
 				7F3283BE26B52E7E0025FCC7 /* Info.plist */,
 			);
@@ -108,6 +111,14 @@
 				7F3283CE26B536800025FCC7 /* TutorialCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7F3283D126B53C950025FCC7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7F3283D226B53CA60025FCC7 /* Reusable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3283D326B53CA60025FCC7 /* Reusable.swift in Sources */,
 				7F3283C526B533110025FCC7 /* TutorialViewController.swift in Sources */,
 				7F3283CF26B536800025FCC7 /* TutorialCell.swift in Sources */,
 				7F3283B326B52E7D0025FCC7 /* AppDelegate.swift in Sources */,

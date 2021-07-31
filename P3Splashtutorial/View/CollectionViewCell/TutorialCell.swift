@@ -28,3 +28,7 @@ class TutorialCell: UICollectionViewCell {
     }
 
 }
+
+
+// MARK: - Reusable
+extension TutorialCell: Reusable {}
