@@ -26,8 +26,9 @@ class TutorialViewController: UIViewController {
     // MARK: - Private Func
     /// UICollectionViewの設定をする
     private func setupCollectionView(_ collectionView: UICollectionView) {
-        collectionView.dataSource = self
-        collectionView.delegate   = self
+        collectionView.dataSource      = self
+        collectionView.delegate        = self
+        collectionView.isPagingEnabled = true
         collectionView.register(UINib(nibName: TutorialCell.reuseIdentifier, bundle: nil),
                                 forCellWithReuseIdentifier: TutorialCell.reuseIdentifier)
     }
