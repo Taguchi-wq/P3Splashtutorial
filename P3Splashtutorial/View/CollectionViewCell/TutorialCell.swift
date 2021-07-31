@@ -13,12 +13,6 @@ class TutorialCell: UICollectionViewCell {
     // MARK: - @IBOutlets
     /// チュートリアルの画像を表示するUIImageView
     @IBOutlet private weak var tutorialNumberImageView: UIImageView!
-    /// チュートリアルの現在地を表示するUIPageControl
-    @IBOutlet private weak var tutorialPageControl: UIPageControl!
-    /// スキップボタン
-    @IBOutlet private weak var skipButton: UIButton!
-    /// ページを進めるボタン
-    @IBOutlet private weak var nextButton: UIButton!
     
     
     // MARK: - Override Func

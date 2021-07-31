@@ -17,34 +17,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-vr-9KB">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n6v-we-lgs">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="14W-tN-oBr">
+                                <rect key="frame" x="30" y="50" width="708" height="944"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チュートリアル" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc3-nQ-MNm">
+                                        <rect key="frame" x="0.0" y="0.0" width="708" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-vr-9KB">
+                                        <rect key="frame" x="0.0" y="79" width="708" height="689"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n6v-we-lgs">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZpX-YL-Ffg">
+                                        <rect key="frame" x="0.0" y="805" width="708" height="54"/>
+                                        <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0119239362" green="0.47466540340000002" blue="0.98470920319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pez-U6-Uyp">
+                                        <rect key="frame" x="0.0" y="896" width="708" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slV-S1-eOn">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="SKIP"/>
+                                                <connections>
+                                                    <action selector="tappedSkipButton:" destination="RNQ-a2-8xw" eventType="touchUpInside" id="hxw-oL-AAD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlK-A9-3za">
+                                                <rect key="frame" x="354" y="0.0" width="354" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="NEXT"/>
+                                                <connections>
+                                                    <action selector="tappedNextButton:" destination="RNQ-a2-8xw" eventType="touchUpInside" id="TLd-cm-ypm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kHi-vr-9KB" firstAttribute="trailing" secondItem="a0a-Vi-QSn" secondAttribute="trailing" id="Gb4-Gt-nLo"/>
-                            <constraint firstItem="kHi-vr-9KB" firstAttribute="top" secondItem="a0a-Vi-QSn" secondAttribute="top" id="dem-4C-ZQp"/>
-                            <constraint firstItem="kHi-vr-9KB" firstAttribute="bottom" secondItem="a0a-Vi-QSn" secondAttribute="bottom" id="pb7-T4-b0B"/>
-                            <constraint firstItem="kHi-vr-9KB" firstAttribute="leading" secondItem="a0a-Vi-QSn" secondAttribute="leading" id="sCU-yl-6ok"/>
+                            <constraint firstItem="a0a-Vi-QSn" firstAttribute="bottom" secondItem="14W-tN-oBr" secondAttribute="bottom" constant="30" id="g2Z-9O-PnQ"/>
+                            <constraint firstItem="14W-tN-oBr" firstAttribute="top" secondItem="a0a-Vi-QSn" secondAttribute="top" constant="30" id="hyu-Wt-rhY"/>
+                            <constraint firstItem="a0a-Vi-QSn" firstAttribute="trailing" secondItem="14W-tN-oBr" secondAttribute="trailing" constant="30" id="tzx-q1-QwD"/>
+                            <constraint firstItem="14W-tN-oBr" firstAttribute="leading" secondItem="a0a-Vi-QSn" secondAttribute="leading" constant="30" id="x1W-Pu-MkH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a0a-Vi-QSn"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="VlK-A9-3za" id="H2u-ph-QAc"/>
+                        <outlet property="skipButton" destination="slV-S1-eOn" id="Dod-f0-nDH"/>
                         <outlet property="tutorialCollectionView" destination="kHi-vr-9KB" id="D1K-M4-YLZ"/>
+                        <outlet property="tutorialPageControl" destination="ZpX-YL-Ffg" id="Atf-Sp-zBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aU-90-EWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114.40000000000001" y="142.57871064467767"/>
+            <point key="canvasLocation" x="-114.84375" y="142.3828125"/>
         </scene>
     </scenes>
 </document>
