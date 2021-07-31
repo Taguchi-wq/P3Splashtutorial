@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNQ-a2-8xw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2BW-76-GgH">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,7 +27,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-vr-9KB">
-                                        <rect key="frame" x="0.0" y="79" width="708" height="689"/>
+                                        <rect key="frame" x="0.0" y="79" width="708" height="656"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="n6v-we-lgs">
                                             <size key="itemSize" width="50" height="50"/>
@@ -38,7 +38,7 @@
                                         <cells/>
                                     </collectionView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZpX-YL-Ffg">
-                                        <rect key="frame" x="0.0" y="805" width="708" height="54"/>
+                                        <rect key="frame" x="0.0" y="772" width="708" height="87"/>
                                         <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="currentPageIndicatorTintColor" red="0.0119239362" green="0.47466540340000002" blue="0.98470920319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
@@ -75,14 +75,41 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a0a-Vi-QSn"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wRs-yv-vrc"/>
                     <connections>
                         <outlet property="nextButton" destination="VlK-A9-3za" id="H2u-ph-QAc"/>
                         <outlet property="skipButton" destination="slV-S1-eOn" id="Dod-f0-nDH"/>
                         <outlet property="tutorialCollectionView" destination="kHi-vr-9KB" id="D1K-M4-YLZ"/>
                         <outlet property="tutorialPageControl" destination="ZpX-YL-Ffg" id="Atf-Sp-zBQ"/>
+                        <segue destination="lpg-fV-QEn" kind="show" id="Kw1-dj-ClU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aU-90-EWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.78125" y="142.3828125"/>
+        </scene>
+        <!--Layout-->
+        <scene sceneID="mOi-gT-q30">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LayoutViewController" storyboardName="Layout" id="lpg-fV-QEn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGc-1r-azN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233.984375" y="141.796875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Mw-jR-3bU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="2BW-76-GgH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0fP-BX-i4A">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RNQ-a2-8xw" kind="relationship" relationship="rootViewController" id="Aeb-hr-X6t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E38-aV-tWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-114.84375" y="142.3828125"/>
         </scene>

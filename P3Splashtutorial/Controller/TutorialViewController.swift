@@ -64,11 +64,17 @@ class TutorialViewController: UIViewController {
         }
     }
     
+    /// LayoutViewControllerに遷移する
+    private func transitionToLayoutVC() {
+        guard let layoutVC = storyboard?.instantiateViewController(withIdentifier: LayoutViewController.reuseIdentifier) as? LayoutViewController else { return }
+        navigationController?.pushViewController(layoutVC, animated: true)
+    }
+    
     
     // MARK: - @objc
     /// 終わりボタン(EndButton)を押した時の処理
     @objc private func tappedEndButton(_ sender: UIButton) {
-        print("end button")
+        transitionToLayoutVC()
     }
 
     
