@@ -10,6 +10,12 @@ import UIKit
 
 class TutorialViewController: UIViewController {
 
+    // MARK: - @IBOutlets
+    /// チュートリアルを表示するUICollectionView
+    @IBOutlet private weak var tutorialCollectionView: UICollectionView!
+    
+    
+    // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
     }
