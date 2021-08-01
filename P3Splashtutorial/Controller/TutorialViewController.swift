@@ -34,6 +34,13 @@ class TutorialViewController: UIViewController {
         setupPageControl(tutorialPageControl)
     }
     
+    /// レイアウト(デバイスの傾き)が変わった時に呼ばれる
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tutorialCollectionView.reloadData()
+    }
+    
     
     // MARK: - Private Func
     /// UICollectionViewの設定をする
@@ -68,10 +75,13 @@ class TutorialViewController: UIViewController {
     private func transitionToLayoutVC() {
         guard let layoutVC = storyboard?.instantiateViewController(withIdentifier: LayoutViewController.reuseIdentifier) as? LayoutViewController else { return }
         navigationController?.pushViewController(layoutVC, animated: true)
+        // チュートリアルを全て見終わったタイミング(今回はレイアウト画面に遷移するタイミング)で
+        // 新規ユーザーでないと記録する
+        User.shared.setIsNotNewUser()
     }
     
     
-    // MARK: - @objc
+    // MARK: - @objc Func
     /// 終わりボタン(EndButton)を押した時の処理
     @objc private func tappedEndButton(_ sender: UIButton) {
         transitionToLayoutVC()
@@ -123,3 +133,7 @@ extension TutorialViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
+
+
+// MARK: - Reusable
+extension TutorialViewController: Reusable {}

@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         sleep(2)
+        
+        // 新規ユーザーであれば、チュートリアル画面から始める
+        // 新規ユーザーでないならレイアウト画面から始める
+        if User.shared.isNewUser {
+            let storyboard = UIStoryboard(name: "Tutorial", bundle: nil)
+            let tutorialVC = storyboard.instantiateViewController(withIdentifier: TutorialViewController.reuseIdentifier)
+            window?.rootViewController = tutorialVC
+        }
+        
         return true
     }
 
