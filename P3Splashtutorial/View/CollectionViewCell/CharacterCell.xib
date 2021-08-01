@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="gTV-IL-0wX" customClass="CharacterCell" customModule="P3Splashtutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="204"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nX7-eq-l43">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="204"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hitsuji" translatesAutoresizingMaskIntoConstraints="NO" id="J0J-xU-Bxn">
+                                <rect key="frame" x="0.0" y="0.0" width="213" height="204"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J0J-xU-Bxn" firstAttribute="top" secondItem="nX7-eq-l43" secondAttribute="top" id="17e-iX-Qon"/>
+                            <constraint firstItem="J0J-xU-Bxn" firstAttribute="leading" secondItem="nX7-eq-l43" secondAttribute="leading" id="1Ra-ry-pOF"/>
+                            <constraint firstAttribute="trailing" secondItem="J0J-xU-Bxn" secondAttribute="trailing" id="Y5g-9e-e9r"/>
+                            <constraint firstAttribute="bottom" secondItem="J0J-xU-Bxn" secondAttribute="bottom" id="sbc-nK-w8v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nX7-eq-l43" secondAttribute="bottom" id="8tO-i4-ptj"/>
+                <constraint firstAttribute="trailing" secondItem="nX7-eq-l43" secondAttribute="trailing" id="F5p-ew-jNJ"/>
+                <constraint firstItem="nX7-eq-l43" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HO2-zw-D14"/>
+                <constraint firstItem="nX7-eq-l43" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eZj-FQ-Y9t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="213" height="204"/>
+            <connections>
+                <outlet property="characterImageView" destination="J0J-xU-Bxn" id="GG8-zj-ImT"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="223.98800599700152"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hitsuji" width="178" height="203"/>
+    </resources>
+</document>

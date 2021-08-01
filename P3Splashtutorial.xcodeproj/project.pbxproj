@@ -18,6 +18,10 @@
 		7F3283D826B543A40025FCC7 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283D726B543A40025FCC7 /* Tutorial.swift */; };
 		7F3283DE26B5A6E30025FCC7 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283DD26B5A6E30025FCC7 /* LayoutViewController.swift */; };
 		7F3283E026B5A6F60025FCC7 /* Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3283DF26B5A6F60025FCC7 /* Layout.storyboard */; };
+		7F3283E326B5D86B0025FCC7 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283E126B5D86B0025FCC7 /* CharacterCell.swift */; };
+		7F3283E426B5D86B0025FCC7 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3283E226B5D86B0025FCC7 /* CharacterCell.xib */; };
+		7F3283EB26B67AC50025FCC7 /* LandscapeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283EA26B67AC50025FCC7 /* LandscapeCharacter.swift */; };
+		7F3283ED26B67BEF0025FCC7 /* PortraitCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3283EC26B67BEF0025FCC7 /* PortraitCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		7F3283D726B543A40025FCC7 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		7F3283DD26B5A6E30025FCC7 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		7F3283DF26B5A6F60025FCC7 /* Layout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layout.storyboard; sourceTree = "<group>"; };
+		7F3283E126B5D86B0025FCC7 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		7F3283E226B5D86B0025FCC7 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		7F3283EA26B67AC50025FCC7 /* LandscapeCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeCharacter.swift; sourceTree = "<group>"; };
+		7F3283EC26B67BEF0025FCC7 /* PortraitCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,8 @@
 			children = (
 				7F3283CD26B536800025FCC7 /* TutorialCell.swift */,
 				7F3283CE26B536800025FCC7 /* TutorialCell.xib */,
+				7F3283E126B5D86B0025FCC7 /* CharacterCell.swift */,
+				7F3283E226B5D86B0025FCC7 /* CharacterCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -134,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				7F3283D726B543A40025FCC7 /* Tutorial.swift */,
+				7F3283EA26B67AC50025FCC7 /* LandscapeCharacter.swift */,
+				7F3283EC26B67BEF0025FCC7 /* PortraitCharacter.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -197,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F3283E026B5A6F60025FCC7 /* Layout.storyboard in Resources */,
+				7F3283E426B5D86B0025FCC7 /* CharacterCell.xib in Resources */,
 				7F3283BD26B52E7E0025FCC7 /* LaunchScreen.storyboard in Resources */,
 				7F3283D026B536800025FCC7 /* TutorialCell.xib in Resources */,
 				7F3283C726B5331A0025FCC7 /* Tutorial.storyboard in Resources */,
@@ -211,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3283ED26B67BEF0025FCC7 /* PortraitCharacter.swift in Sources */,
 				7F3283D326B53CA60025FCC7 /* Reusable.swift in Sources */,
 				7F3283D826B543A40025FCC7 /* Tutorial.swift in Sources */,
+				7F3283EB26B67AC50025FCC7 /* LandscapeCharacter.swift in Sources */,
 				7F3283C526B533110025FCC7 /* TutorialViewController.swift in Sources */,
+				7F3283E326B5D86B0025FCC7 /* CharacterCell.swift in Sources */,
 				7F3283CF26B536800025FCC7 /* TutorialCell.swift in Sources */,
 				7F3283DE26B5A6E30025FCC7 /* LayoutViewController.swift in Sources */,
 				7F3283B326B52E7D0025FCC7 /* AppDelegate.swift in Sources */,
